@@ -24,9 +24,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/b4/css/bootstrap.min.css",
+              "src/assets/font-awesome-4.7.0/css/font-awesome.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/jquery/jquery-3.5.1.slim.min.js",
+              "src/assets/b4/js/bootstrap.min.js",
+              "src/assets/tether/tether.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "compo-direc-cycle"
+    }
+  },
+  "defaultProject": "compo-direc-cycle",
+  "cli": {
+    "analytics": "d76749c1-a252-49fc-b2b7-6793ffa762af"
+  }
 }

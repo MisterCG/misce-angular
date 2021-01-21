@@ -1,0 +1,25 @@
+<div [ngClass]=" alerta " class="alert">Un lindo mensaje</div>
+
+<button class="btn btn-info" (click)="alerta = 'alert-info'">Info</button>
+<button class="btn btn-danger" (click)="alerta = 'alert-danger'">Danger</button>
+
+<br>
+
+<h3 [ngClass]="{ 'text-info': classPropiedad.color, 'text-danger': !classPropiedad.color }">
+    Hola mundo
+</h3>
+
+
+<button class="btn" 
+        (click)="classPropiedad.color = !classPropiedad.color"
+        [ngClass]="{ 'btn-info': classPropiedad.color, 'btn-danger': !classPropiedad.color }">
+    Cambiar</button>
+
+
+<hr>
+
+<button class="btn btn-primary" (click)="ejecutar()" [disabled]="loading">
+    <i class="fa" [ngClass]="{ 'fa-refresh fa-spin': loading, 'fa-save': !loading } " ></i>
+    <span *ngIf="!loading"> Guardar cambios </span>
+    <span *ngIf="loading"> Espero por favor </span>
+</button>
